@@ -35,5 +35,6 @@ jobs:
       - uses: actions/download-artifact@v8
         with:
           name: dist
+          path: packages
 
       - run: npx pkg-pr-new publish './packages/web' './packages/react'
